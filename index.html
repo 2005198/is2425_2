@@ -23,7 +23,7 @@
 
             let mapNums=()=>{
                 let s=document.getElementById("nums").value;
-                s.split(" ").map(parseInt).map(x=>x*x).array.forEach(element => {
+                s.split(" ").map(x=>parseInt(x)).map(x=>x*x).forEach(element => {
                     alert(element);
                 });
             }
