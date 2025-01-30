@@ -20,6 +20,13 @@
             }
             let v=power(4,3);
             alert (v);
+
+            let mapNums=()=>{
+                let s=document.getElementById("nums").value;
+                s.split(" ").map(parseInt).map(x=>x*x).array.forEach(element => {
+                    alert(element);
+                });
+            }
         </script>
 
     </HEAD>
@@ -74,6 +81,7 @@
         </p>
         <p>You may find the split function useful for creating arrays from the strings entered: <a href="https://www.w3schools.com/jsref/jsref_split.asp">Split</a></p>
 
+        <input type="text" id="nums"> <button onclick="mapNums()">Press me!</button>
 </body>
 </HTML>
 
